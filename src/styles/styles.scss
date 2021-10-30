@@ -19,3 +19,232 @@
 @import "navigation/sidenav/sidenav.scss";
 @import "navigation/sidenav/sidenav-dark.scss";
 @import "navigation/sidenav/sidenav-light.scss";
+
+.mainbg{
+    background-image: url(../assets/img/WP1.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size:cover;
+    height:100%;
+    padding:30px 0px;
+}
+.page-header h2{
+    font-size:50px;
+    color:#FFFFFF;
+}
+.mainbg .breadcrumb{
+    background-color: transparent;
+    padding: 0;
+    margin:20px 0px;
+}
+.mainbg .breadcrumb li{
+    color:#FFFFFF;
+    font-size: 20px;
+}
+.mainbg .breadcrumb li a{
+    color:#FFFFFF;
+    font-size: 20px;
+}
+
+.mainbg .breadcrumb-item + .breadcrumb-item::before{
+    content:"\203A" !important;
+    color:#FFFFFF;
+    font-size: 20px;
+
+}
+.total-sales-block{
+    width:90%;
+    margin-bottom:30px;
+}
+.total-sales-block h3{
+    background-color: #4e5398;
+    padding:20px;
+    font-size:32px;
+    color:#FFFFFF;
+    text-align: center;
+    margin-bottom:0;
+}
+.total-sales-block p{
+    background-color: #FFFFFF;
+    padding:30px 20px;
+    font-size:32px;
+    color:#333333;
+    text-align: center;
+    line-height: 45px;
+    margin-bottom:0px;
+}
+.total-sales-block .date-picker{
+    background-color: #585858;
+    padding:10px;
+    text-align: center;
+}
+
+.total-sales-block .date-picker span img{
+    width:25px;
+    height:25px;
+}
+.total-sales-block .date-picker span.left{
+    float:left;
+}
+.total-sales-block .date-picker span.right{
+    float:right;
+}
+.total-sales-block .date-picker p{
+    display: inline-block;
+    background-color: #585858;
+    padding:0px;
+    line-height:25px;
+    font-size:18px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom:0;
+    font-weight:bold;
+}
+.sales-time-block1, .sales-time-block2{
+    margin-bottom:20px;
+}
+.sales-time-block1 h3, .sales-time-block2 h3{
+    background-color: #4e5398;
+    padding:10px;
+    font-size:20px;
+    color:#FFFFFF;
+    text-align: center;
+    margin-bottom:0;
+}
+.sales-time-block1 h3::before{
+    background-image: url(../assets/img/EarlyMorning.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+   height:25px;
+    width:25px;
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 18px;
+    background-size: 100%;
+   
+}
+.sales-time-block2 h3::before{
+    background-image: url(../assets/img/EarlyMorning1.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+   height:25px;
+    width:25px;
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 18px;
+    background-size: 100%;
+}
+.sales-time-block1 p, .sales-time-block2 p{
+    background-color: #FFFFFF;
+    padding:10px;
+    font-size:24px;
+    color:#333333;
+    text-align: center;
+    line-height: 28px;
+    margin-bottom:0px;
+    min-height:50px;
+}
+.area-sales-block label{
+    width:50%;
+    margin:20px 0px;
+    font-weight: bold;
+    font-size:22px;
+    line-height:28px;
+}
+.area-sales-block .area a{
+    background-color: #4e5398;
+    padding:20px;
+    color:#FFFFFF;
+    font-size:22px;
+    line-height:28px;
+    display: block;
+}
+
+.area-sales-block .amount{
+    background-color: #ffffff;
+    padding:20px;
+    color:#333333;
+    text-align: center;
+}
+.branch-sales-block{
+    text-align: center;
+    width:60%;
+    float: right;
+    max-width:100%;
+}
+.branch-sales-block p{
+    padding:10px 20px 10px 30px;
+    font-size:50px;
+    color:#FFFFFF;
+    text-align: center;
+    line-height: 60px;
+    margin-bottom:0px;
+    display: inline-block;
+}
+.branch-sales-block .date-picker{
+     text-align: center;
+}
+
+.branch-sales-block span img{
+    width:65px;
+    height:65px;
+}
+.branch-sales-block span.left{
+    float:left;
+    padding-top:25px;
+}
+.branch-sales-block span.right{
+    float:right;
+    padding-top:25px;
+}
+.branch-sales-block .date-picker p{
+    display: inline-block;
+    padding:0px;
+    line-height:25px;
+    font-size:18px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom:0;
+    font-weight:bold;
+}
+.sales-types{
+    background-color: #4e5398;
+    text-align: center;
+}
+.sales-types img{
+    width:200px;
+    text-align: center;
+    
+}
+.branch-sales-section .total-sales-block{
+    width:100%;
+}
+.branch-sales-section{
+    margin-top:20px;
+}
+.Category-sales-section{
+    padding-top:10px;
+}
+.Category-sales-section .sales-types{
+    background-color: #FFFFFF;
+    text-align: center;
+}
+.Category-sales-section .sales-types img{
+    width:150px;
+    text-align: center;
+    
+}
+.Category-sales-section .total-sales-block{
+    width:100%;
+}
+.Category-sales-section .total-sales-block p{
+    background-color: #682a76;
+    color:#ffffff;
+    padding:20px 20px;
+    font-size:32px;
+   text-align: center;
+    line-height: 38px;
+    margin-bottom:0px;
+}
