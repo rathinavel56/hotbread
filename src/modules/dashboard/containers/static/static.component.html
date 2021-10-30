@@ -1,8 +1,77 @@
-<sb-layout-dashboard [static]="true"
+<!--<sb-layout-dashboard [static]="true"
     ><sb-dashboard-head title="Dashboard Static" [hideBreadcrumbs]="false"></sb-dashboard-head><sb-dashboard-cards></sb-dashboard-cards><sb-dashboard-charts></sb-dashboard-charts><sb-dashboard-tables></sb-dashboard-tables
     ><sb-card
         ><div class="card-header"><fa-icon class="mr-1" [icon]='["fas", "chart-pie"]'></fa-icon>Pie Chart Example</div>
         <div class="card-body"><sb-charts-pie></sb-charts-pie></div>
         <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div></sb-card
     ></sb-layout-dashboard
->
+>-->
+<div class="mainbg">
+    <div class="container">
+        <div class="row">
+        <div class="col-xl-4 col-md-12 ">
+            <div class="page-header">
+                <h2>Sales</h2>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Sales</li>
+                    </ol>
+                  </nav>
+            </div>
+            <div class="total-sales-block">
+                <h3>Total Sales</h3>
+                <p>&#8377; 7,33,115</p>
+                <div class="date-picker">
+                    <span class="left"><img src="../../../../assets/img/Back Arrow.png"></span>
+                    <p>09-09-2021</p>
+                    <span class="right"><img src="../../../../assets/img/Front Arrow.png"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-6 col-md-6 sales-time-block1">
+                    <h3>6:30 AM - 9 AM</h3>
+                    <p>&#8377; 25,334</p>
+                </div>
+                <div class="col-xl-6 col-md-6 sales-time-block2">
+                    <h3>9 AM - 12:30 PM</h3>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-8 col-md-12">
+            <div class="area-sales-block">
+                <ul class="list-unstyled">
+                    <li>
+                        <label class="area"><a href="#">Adambakkam</a></label>
+                        <label class="amount">&#8377; 25,500</label>
+                    </li>
+                    <li>
+                        <label class="area"><a href="#">Anna Nagar</a></label>
+                        <label class="amount">&#8377; 54,500</label>
+                    </li>
+                    <li>
+                        <label class="area"><a href="#">Ashok Nagar</a></label>
+                        <label class="amount">&#8377; 40,040</label>
+                    </li>
+                    <li>
+                        <label class="area"><a href="#">Ambour Salai</a></label>
+                        <label class="amount">&#8377; 65,400</label>
+                    </li>
+                    <li>
+                        <label class="area"><a href="#">Adyar</a></label>
+                        <label class="amount">&#8377; 39,997</label>
+                    </li>
+                    <li>
+                        <label class="area"><a href="#">Kattukuppam</a></label>
+                        <label class="amount">&#8377; 5,745</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+</div>
+</div>
+</div>
+   
+
