@@ -20,6 +20,13 @@ const routes: Routes = [
             ),
     },
     {
+        path: 'receipe',
+        loadChildren: () =>
+            import('modules/receipe/receipe-routing.module').then(
+                m => m.ReceipeRoutingModule
+            ),
+    },
+    {
         path: 'auth',
         loadChildren: () =>
             import('modules/auth/auth-routing.module').then(m => m.AuthRoutingModule),

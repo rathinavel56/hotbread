@@ -19,7 +19,7 @@ import { Subscription } from 'rxjs';
 })
 export class LayoutDashboardComponent implements OnInit, OnDestroy {
     @Input() static = false;
-    @Input() light = false;
+    @Input() light = true;
     @HostBinding('class.sb-sidenav-toggled') sideNavHidden = false;
     subscription: Subscription = new Subscription();
     sideNavItems = sideNavItems;

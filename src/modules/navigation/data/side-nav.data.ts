@@ -3,16 +3,8 @@ import { SideNavItems, SideNavSection } from '@modules/navigation/models';
 export const sideNavSections: SideNavSection[] = [
     {
         text: 'CORE',
-        items: ['dashboard'],
-    },
-    {
-        text: 'INTERFACE',
-        items: ['layouts', 'pages'],
-    },
-    {
-        text: 'ADDONS',
-        items: ['charts', 'tables'],
-    },
+        items: ['dashboard', 'ingredients', 'receipe', 'calculate'],
+    }
 ];
 
 export const sideNavItems: SideNavItems = {
@@ -20,6 +12,21 @@ export const sideNavItems: SideNavItems = {
         icon: 'tachometer-alt',
         text: 'Dashboard',
         link: '/dashboard',
+    },
+    ingredients: {
+        icon: 'tachometer-alt',
+        text: 'Ingredients',
+        link: '/receipe/ingredients',
+    },
+    receipe: {
+        icon: 'tachometer-alt',
+        text: 'Receipe',
+        link: '/receipe/receipe',
+    },
+    calculate: {
+        icon: 'tachometer-alt',
+        text: 'Receipe Calculate',
+        link: '/receipe/receipeCalculate',
     },
     layouts: {
         icon: 'columns',

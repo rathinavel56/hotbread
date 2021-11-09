@@ -4,6 +4,8 @@
 
 export const environment = {
     production: false,
+	apiEndPoint: 'api/v1',
+    assetEndPoint: '/'
 };
 
 /*
