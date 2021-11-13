@@ -1,25 +1,27 @@
-import { TestBed, waitForAsync } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
+import { APP_BASE_HREF } from '@angular/common';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { AppComponent } from './app.component';
+import { AppModule } from './app.module';
 
 describe('AppComponent', () => {
+    let component: AppComponent;
+    let fixture: ComponentFixture<AppComponent>;
+
     beforeEach(waitForAsync(() => {
         TestBed.configureTestingModule({
-            imports: [RouterTestingModule],
-            declarations: [AppComponent],
+            imports: [AppModule],
+            providers: [{ provide: APP_BASE_HREF, useValue: '/' }]
         }).compileComponents();
     }));
 
-    it('should create the app', () => {
-        const fixture = TestBed.createComponent(AppComponent);
-        const app = fixture.debugElement.componentInstance;
-        expect(app).toBeTruthy();
+    beforeEach(() => {
+        fixture = TestBed.createComponent(AppComponent);
+        component = fixture.componentInstance;
+        fixture.detectChanges();
     });
 
-    it(`should have as title 'sb-admin-angular'`, () => {
-        const fixture = TestBed.createComponent(AppComponent);
-        const app = fixture.debugElement.componentInstance;
-        expect(app.title).toEqual('sb-admin-angular');
+    it('should create', () => {
+        expect(component).toBeTruthy();
     });
 });
